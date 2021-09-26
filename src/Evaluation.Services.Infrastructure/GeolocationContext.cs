@@ -21,14 +21,6 @@ namespace Evaluation.Services.Infrastructure.Context
         public virtual DbSet<Address> Addresses { get; set; }
         public virtual DbSet<Location> Locations { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer("Server=tcp:geolocationprueba.database.windows.net,1433;Initial Catalog=Geolocation;Persist Security Info=False;User ID=sabrina;Password=2021Sabry;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
-            }
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");

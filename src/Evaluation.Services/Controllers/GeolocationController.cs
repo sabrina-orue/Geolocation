@@ -11,12 +11,11 @@ namespace Evaluation.Services.Api.Geo.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : BaseController<WeatherForecastController>
+    public class GeolocationController : BaseController<GeolocationController>
     {
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMediator mediator) : base(logger, mediator)
+        public GeolocationController(ILogger<GeolocationController> logger, IMediator mediator) : base(logger, mediator)
         {
         }
-
 
         [HttpPost("geolocalizacion")]
         [ProducesResponseType(typeof(GeolocationResponse), StatusCodes.Status200OK)]

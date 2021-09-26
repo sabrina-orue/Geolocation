@@ -6,6 +6,6 @@ namespace Evaluation.Services.Domain.Response
 {
    public class GeolocationResponse
     {
-        public string Id { get; set; }
+        public long Id { get; set; }
     }
 }

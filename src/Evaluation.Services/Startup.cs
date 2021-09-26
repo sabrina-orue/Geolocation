@@ -1,11 +1,17 @@
+using Evaluation.Services.Application.Services;
 using Evaluation.Services.Infrastructure.Context;
+using Evaluation.Services.Infrastructure.Repository;
+using Evaluation.Services.Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using Microsoft.OpenApi.Models;
+using System.Reflection;
+using MediatR;
+using Evaluation.Services.Application.Mapper;
 
 namespace Evaluation.Services
 {
@@ -22,17 +28,21 @@ namespace Evaluation.Services
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<GeolocationContext>(options =>
-               options.UseSqlServer("Server=tcp:geolocationprueba.database.windows.net,1433;Initial Catalog=Geolocation;Persist Security Info=False;User ID=sabrina;Password=2021Sabry;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
+               options.UseSqlServer(Configuration["constring-database"]));
+
+            services.AddMvc();
+
+            services.AddMappers();
+
+            services.AddRepositories();
+
+            services.AddServices();
+            services.AddControllers();
+
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+
             services.AddCors();
             services.AddConfigurationServices(Configuration);
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc(Configuration.GetValue<string>("ApiVersion"), new OpenApiInfo
-                {
-                    Title = Configuration.GetValue<string>("ApiName"),
-                    Version = Configuration.GetValue<string>("ApiVersion")
-                });
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +52,10 @@ namespace Evaluation.Services
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", $"{Configuration.GetValue<string>("ApiName")} {Configuration.GetValue<string>("ApiVersion")}"));
 
             app.UseHttpsRedirection();
 
