@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "RootManageSharedAccessKey": "Endpoint=sb://messengerservice.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=3RvIzyBHnwd8jJyaSP5vPZ1uioT+2pdihRq7N9H1eNw=",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "UrlApi": ""
+  }
+}

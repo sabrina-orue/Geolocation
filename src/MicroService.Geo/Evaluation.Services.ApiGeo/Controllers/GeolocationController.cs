@@ -28,5 +28,11 @@ namespace Evaluation.Services.Api.Geo.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Geocoding([FromRoute] long id) => Ok(await _mediator.Send(new GeocodingRequest(id)));
+
+        [HttpPost("geocodificar")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> SaveGeocoding([FromBody] SaveGeocodingRequest request) => Ok(await _mediator.Send(request));
     }
 }
