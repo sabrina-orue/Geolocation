@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.2.1" />
+    <PackageReference Include="Azure.Identity" Version="1.4.1" />
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Evaluation.Services.GeoCode.Infrastructure\Evaluation.Services.GeoCode.Infrastructure.csproj" />
+    <ProjectReference Include="..\Evaluation.Servoces.GeoCode.Domain\Evaluation.Servoces.GeoCode.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

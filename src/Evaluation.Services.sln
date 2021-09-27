@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroService.GeoCode", "MicroService.GeoCode", "{47B5A413-6DA4-4439-BE80-CF808BB90EEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evaluation.Servoces.GeoCode.Domain", "MicroService.GeoCode\Evaluation.Servoces.GeoCode.Domain\Evaluation.Servoces.GeoCode.Domain.csproj", "{A5670A24-DAAF-48D2-AC1E-801C1692C616}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evaluation.Services.GeoCode.Infrastructure", "MicroService.GeoCode\Evaluation.Services.GeoCode.Infrastructure\Evaluation.Services.GeoCode.Infrastructure.csproj", "{D8EAED42-4C84-44B1-B431-34FB9426B30B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evaluation.Services.GeoCode.Application", "MicroService.GeoCode\Evaluation.Services.GeoCode.Application\Evaluation.Services.GeoCode.Application.csproj", "{A12FCE97-8471-4D22-851D-FA42F2A4178F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evaluation.Services.Api.GeoCode", "MicroService.GeoCode\Evaluation.Services.Api.GeoCode\Evaluation.Services.Api.GeoCode.csproj", "{0D135ADB-2299-40D1-B1BB-5E68314F8B7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroService.Geo", "MicroService.Geo", "{36355FF4-5D81-4922-B22A-5C1105623296}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evaluation.Services.Infrastructure", "MicroService.Geo\Evaluation.Services.Infrastructure\Evaluation.Services.Infrastructure.csproj", "{12AC66BB-3350-4AAF-80F8-8E2FC5516A53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evaluation.Services.Domain", "MicroService.Geo\Evaluation.Services.Domain\Evaluation.Services.Domain.csproj", "{E5F8811F-2841-42A8-A726-727936E68B0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evaluation.Services.Application", "MicroService.Geo\Evaluation.Services.Application\Evaluation.Services.Application.csproj", "{68240B58-4611-4242-8B9A-01AC003A025D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evaluation.Services.Api.Geo", "MicroService.Geo\Evaluation.Services.ApiGeo\Evaluation.Services.Api.Geo.csproj", "{EE6861BC-D767-4D19-9106-393B2A83A2EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5670A24-DAAF-48D2-AC1E-801C1692C616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5670A24-DAAF-48D2-AC1E-801C1692C616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5670A24-DAAF-48D2-AC1E-801C1692C616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5670A24-DAAF-48D2-AC1E-801C1692C616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8EAED42-4C84-44B1-B431-34FB9426B30B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EAED42-4C84-44B1-B431-34FB9426B30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8EAED42-4C84-44B1-B431-34FB9426B30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EAED42-4C84-44B1-B431-34FB9426B30B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A12FCE97-8471-4D22-851D-FA42F2A4178F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A12FCE97-8471-4D22-851D-FA42F2A4178F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A12FCE97-8471-4D22-851D-FA42F2A4178F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A12FCE97-8471-4D22-851D-FA42F2A4178F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D135ADB-2299-40D1-B1BB-5E68314F8B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D135ADB-2299-40D1-B1BB-5E68314F8B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D135ADB-2299-40D1-B1BB-5E68314F8B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D135ADB-2299-40D1-B1BB-5E68314F8B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12AC66BB-3350-4AAF-80F8-8E2FC5516A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12AC66BB-3350-4AAF-80F8-8E2FC5516A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12AC66BB-3350-4AAF-80F8-8E2FC5516A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12AC66BB-3350-4AAF-80F8-8E2FC5516A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F8811F-2841-42A8-A726-727936E68B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F8811F-2841-42A8-A726-727936E68B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F8811F-2841-42A8-A726-727936E68B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F8811F-2841-42A8-A726-727936E68B0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68240B58-4611-4242-8B9A-01AC003A025D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68240B58-4611-4242-8B9A-01AC003A025D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68240B58-4611-4242-8B9A-01AC003A025D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68240B58-4611-4242-8B9A-01AC003A025D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE6861BC-D767-4D19-9106-393B2A83A2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE6861BC-D767-4D19-9106-393B2A83A2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE6861BC-D767-4D19-9106-393B2A83A2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE6861BC-D767-4D19-9106-393B2A83A2EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5670A24-DAAF-48D2-AC1E-801C1692C616} = {47B5A413-6DA4-4439-BE80-CF808BB90EEB}
+		{D8EAED42-4C84-44B1-B431-34FB9426B30B} = {47B5A413-6DA4-4439-BE80-CF808BB90EEB}
+		{A12FCE97-8471-4D22-851D-FA42F2A4178F} = {47B5A413-6DA4-4439-BE80-CF808BB90EEB}
+		{0D135ADB-2299-40D1-B1BB-5E68314F8B7F} = {47B5A413-6DA4-4439-BE80-CF808BB90EEB}
+		{12AC66BB-3350-4AAF-80F8-8E2FC5516A53} = {36355FF4-5D81-4922-B22A-5C1105623296}
+		{E5F8811F-2841-42A8-A726-727936E68B0C} = {36355FF4-5D81-4922-B22A-5C1105623296}
+		{68240B58-4611-4242-8B9A-01AC003A025D} = {36355FF4-5D81-4922-B22A-5C1105623296}
+		{EE6861BC-D767-4D19-9106-393B2A83A2EE} = {36355FF4-5D81-4922-B22A-5C1105623296}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02F3FD4D-45E7-4685-B8E7-20850FAFD19C}
+	EndGlobalSection
+EndGlobal
