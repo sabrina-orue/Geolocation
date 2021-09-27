@@ -6,6 +6,7 @@ namespace Evaluation.Services.GeoCode.Infrastructure.Entities
 {
    public class Address
     {
+        public long Id { get; set; }
        public string  Street { get; set; }
         public string Number { get; set; }
         public string City { get; set; }

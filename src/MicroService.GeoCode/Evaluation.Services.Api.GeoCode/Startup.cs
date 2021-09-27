@@ -8,6 +8,8 @@ using Evaluation.Services.GeoCode.Infrastructure.Services;
 using System.Reflection;
 using Evaluation.Services.GeoCode.Application.Mapper;
 using Evaluation.Services.GeoCode.Application.Services;
+using MediatR;
+
 
 namespace Evaluation.Services.Api.GeoCode
 {

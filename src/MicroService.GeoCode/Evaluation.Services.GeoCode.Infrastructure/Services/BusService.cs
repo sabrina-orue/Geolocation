@@ -1,5 +1,5 @@
-﻿using Evaluation.Services.GeoCode.Domain.Models;
-using Evaluation.Services.GeoCode.Infrastructure.Configuration;
+﻿using Evaluation.Services.GeoCode.Infrastructure.Configuration;
+using Evaluation.Services.GeoCode.Infrastructure.Entities;
 using Evaluation.Services.GeoCode.Infrastructure.Services.Interface;
 using Microsoft.Azure.ServiceBus;
 using Newtonsoft.Json;

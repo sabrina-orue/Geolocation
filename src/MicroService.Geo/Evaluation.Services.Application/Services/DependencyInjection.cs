@@ -1,4 +1,4 @@
-﻿using Evaluation.Services.Domain.Models.Configuration;
+﻿using Evaluation.Services.Infrastructure.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;

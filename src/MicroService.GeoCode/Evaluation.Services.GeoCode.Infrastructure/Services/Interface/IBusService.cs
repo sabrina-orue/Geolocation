@@ -1,5 +1,4 @@
-﻿using Evaluation.Services.GeoCode.Domain.Models;
-using Evaluation.Services.GeoCode.Infrastructure.Entities;
+﻿using Evaluation.Services.GeoCode.Infrastructure.Entities;
 using System.Threading;
 using System.Threading.Tasks;
 

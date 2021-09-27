@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Evaluation.Services.GeoCode.Infrastructure\Evaluation.Services.GeoCode.Infrastructure.csproj" />
-    <ProjectReference Include="..\Evaluation.Servoces.GeoCode.Domain\Evaluation.Servoces.GeoCode.Domain.csproj" />
+    <ProjectReference Include="..\Evaluation.Servoces.GeoCode.Domain\Evaluation.Services.GeoCode.Domain.csproj" />
   </ItemGroup>
 
 </Project>

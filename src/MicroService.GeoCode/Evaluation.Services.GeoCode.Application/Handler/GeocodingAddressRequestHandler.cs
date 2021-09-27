@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Evaluation.Services.GeoCode.Domain.Request;
+using Evaluation.Services.GeoCode.Infrastructure.Entities;
 using Evaluation.Services.GeoCode.Infrastructure.Services.Interface;
 using MediatR;
 using System;
@@ -27,7 +28,11 @@ namespace Evaluation.Services.GeoCode.Application.Handler
 
             public async Task<Unit> Handle(GeocodingAddressRequest request, CancellationToken cancellationToken)
             {
-                return Unit.Value;
+                 var address=  _mapper.Map<Infrastructure.Entities.Address>(request);
+                 Coordinates coor= await _mapServices.GetCoordenates(address, cancellationToken);
+                 await _busService.SendMessageQueue(coor, "END", cancellationToken);
+
+            return Unit.Value;
             
         }
         }
