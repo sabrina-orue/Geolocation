@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>c0d3b56d-b01f-43a4-9b9f-d2b090394d49</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-    <DockerfileContext>..\Evaluation.Services</DockerfileContext>
+    <!--<DockerfileContext>..\Evaluation.Services</DockerfileContext>-->
   </PropertyGroup>
 
   <ItemGroup>
